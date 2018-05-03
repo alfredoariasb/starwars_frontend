@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Proyecto Front_End</title>
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/miestilo.css"> 
+</head>
+ 
+<body> 
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#"></a>
+    <img src="img/2000px-Star_Wars_Logo.png" style width="60"; height="40">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#galeria">Galeria</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+                </div>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" id="buscapersona" type="search" placeholder="Busca tu personaje" aria-label="Search" autocomplete="off">
+            <ul class="list-group" id="result"></ul>
+        </form>
+    </div>
+</nav>
+
+<div class="carrusel">
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicadores -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Imagenes del  Carousel -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="img/starw2.jpg" alt="Star Wars" style="width:100%;">
+            </div>
+            <div class="item">
+                <img src="img/starw1.jpg" alt="Star Wars 2" style="width:100%;">
+            </div>
+            <div class="item">
+                <img src="img/starw3.jpg" alt="Star Wars3" style="width:100%;">
+            </div>
+        </div>
+
+        <!-- Controles de Izquierda y Derecha -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Siguiente</span>
+        </a>
+    </div>
+</div><br><br>
+<div class="contenedor">
+<div class="api">
+    <div id="titulo"><h1 id="title">Star's Wars API</h1></div>
+    <div class="info-container"></div>      
+</div>
+<div class="seccion2">
+    <div class="img-seccion2">
+        <div class="info2">
+            <p class="quote1"> “Miedo, ira, agresividad, el lado oscuro ellos son.<br> Si algún día rigen tu vida, para siempre tu destino dominarán." -Yoda-</p>             
+        </div>
+    </div>
+</div>  
+<div class="seccion3">              
+    <div class="darthvadersketch1">
+        <picture>
+            <img src="img/darthvadersketch1.gif">
+        </picture>
+    </div>
+    <div class="texto1">
+        <p>Hace cientos de miles de años, en la trama ideada por Lucas, los destinos del universo eran regidos por una República Galáctica benévola, cuya capital se hallaba en el planeta Coruscant.
+        Casi al mismo tiempo nace la Orden de los Caballeros Jedi en el Planeta Ossus, un grupo filosófico de individuos que explora el poder de la Fuerza, una energía vital que integra y compone el Universo. Los Jedi, que velan por el bienestar de la República, aprenden el uso de la Fuerza, que otorga una enorme carga de poder y responsabilidad. La Fuerza, si embargo, puede conducir también al lado oscuro. <br><br>
+        Un grupo de caballeros Jedi es atraído por este sendero y se corrompe. Son conocidos como los Lords del Sith, debido al nombre de los seres humanoides que esclavizan. Logran crear su propio imperio. Los primeros intentos de los Sith por destruir la república fallan gracias a la Orden Jedi, particularmente en La Guerra de los Sith. Los caballeros del lado oscuro se debilitan pero no desaparecen. Años después nacen dos de los más grandes maestros Jedi, que participan directamente en casi todas las entregas de Star Wars: Yoda, y luego Obi Wan Kenobi. Diecinueve años después de Obi, nace Annakin Skywalker.</p>
+    </div>
+</div>
+
+<div id="galeria" class="content">
+    <h1>Galeria de Imagenes</h1>
+    <div class="content-img">
+        <ul>
+            <li>
+                <div class="imagen">
+                    <a href="#">Imagen 1</a>
+                </div>
+                <img src="img/starw1.jpg">
+            </li>
+            <li>
+                <div class="imagen">
+                    <a href="#">Imagen 2</a>
+                </div>
+                <img src="img/darthvadrbg.jpg">
+            </li>
+            <li>
+                <div class="imagen">
+                    <a href="#">Imagen 3</a>
+                </div>
+                <img src="img/star-wars-ult-background-44.png">
+            </li>
+            <li>
+                <div class="imagen">
+                    <a href="#">Imagen 4</a>
+                </div>
+                <img src="img/darthvadrbg2.jpg">
+            </li>
+        </ul>
+    </div>
+</div>
+
+   <div class="vid-seccion">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Q0CbN8sfihY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/jPEYpryMp2s" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+<footer>
+    <div id="pie" class='pie_pagina'>
+        
+        <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Click para volver al tope de la  pagina" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
+        Alfredo Arias - 2018 
+    </div>
+</footer>
+
+<script src="js/codigo.js" type="text/javascript" charset="utf-8" async defer></script>
+</div>
+</body>
+</html>
