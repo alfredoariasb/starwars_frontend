@@ -16,11 +16,18 @@ body, html{
 	width: 100%;
 	padding: 0;
 	margin: 0;
+	float: left;
+	margin-top: 20px;
 }
 
 .navbar{
 	margin-bottom: 0px;
 	background-color: black;
+	position: fixed;
+	z-index: 120;
+	width: 100%;
+	height: 60px;
+	top: 0;
 }
 
 .form-inline, my-2 my-lg-0{
@@ -38,13 +45,15 @@ body, html{
 }
 
 .api{
-	margin-top: 140px;
+	margin-top: 75px;
 	padding:15px 5%;
 	color: white;
 	text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+	width: 100%;
+	float: left;
 }
 
-#titulo{margin-top:50%;}
+
 
 .info-container{
 	text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
@@ -59,49 +68,57 @@ body, html{
 }
 
 .seccion2{
-	width: 1350px;
+	width: 100%;
 	height: 640px;
 	background-image: url(../img/star-wars-ult-background-42.jpg);
+	background-size: cover;
+	float: left;
+	background-repeat: no-repeat;
 }
 
 .info2{
-	position: absolute;
 	overflow: hidden;
 	width: 1350px;
 	height: 640px;
 	background-color: rgba(31,31,31,0.9);
 	opacity: 0;
 	-webkit-transition: opacity 0.2s;
-	opacity: 0;
 }
 
 .seccion2:hover div.info2{
 	opacity: 1;
+	width: 100%;
 }
 
-p.info2{
-	width: 1300px;
+p{
+	text-align: justify;
+	font-family: 'Alegreya Sans', sans-serif;
+	font-size: 1em;
+	padding-right: 5px;
 }
 
 .seccion3{
 	margin-top: 140px;
-	margin-top: 280px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	width: 100%;
+	height: 889px;
+	float: left;
 }
 
-.texto1, p{
+.texto1{
 	width: 70%;
-	padding-top:20px;
+	padding-top: 20px;
 	padding-bottom: 20px;
-	text-align:justify;
-	margin-left: 50px;
-	font-family: 'Alegreya Sans', sans-serif;
+	padding-left: 2%;
+	padding-right: 5px;
+	float: left;
+	box-sizing: border-box;
 	font-size: 20pt;
-	padding-right:5px;
 }
 
 p.quote1{
-	position: absolute;
-	margin-left: -70px
+	margin-left: -70px;
 	font-weight: bold;
 	font-family: helvetica;
 	font-style: italic;
@@ -121,6 +138,8 @@ p.quote1{
 	float: right;
 	border-radius: 30px;
 	margin-top: 70px;
+	width: 100%;
+	height: 100%;
 }
 
 .personajes {
@@ -135,16 +154,13 @@ div.content,h1 {
 	color: white;
 	text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
 }
-.seccion3{
-	background-color: white;
-}
+
 
 .content-img{
-	width: 805px;
+	width: 100%;
 	height: 320px;
 	overflow: hidden;
-	margin: 50px auto;
-
+	margin: 50px 0;
 	-webkit-box-shadow: 0 0 10px 1px rgba(0,0,0,0.35);
 	box-shadow: 0 0 10px 1px rgba(0,0,0,0.35);
 }
@@ -154,22 +170,19 @@ div.content,h1 {
 }
 
 .content-img li {
-	position: relative;
 	display: block;
-	width: 160px;
+	width: 392px;
 	float: left;
 	-webkit-box-shadow: 0 0 25px 10px rgba(0,0,0,0.5);
 	box-shadow: 0 0  25px 10px rgba(0,0,0,0.5);
 	-webkit-transition: all 0.5s ease;
 	-o-transition: all 0.5s ease;
 	transition: all 0.5s ease;
-
 }
 
 .content-img ul:hover li {
-width: 40px;
-filter: brightness(50%);
-
+	width: 40px;
+	filter: brightness(50%);
 }
 
 .content-img ul li:hover {
@@ -188,14 +201,12 @@ filter: brightness(50%);
 }
 
 .imagen {
-	position: absolute;
 	top:100%;
 	width: 100%;
 	background: -webkit-linear-gradient(left, rgba(0,0,0,0.8)), rgba(255,255,255,0.8);
 	background-size: 400% 400%;
 	display: block;
 	animation: cambia-color 10s linear infinited;
-	
 	-webkit-transition: all 0.5s ease;
 	-o-transition: all 0.5s ease;
 	transition: all 0.5 ease;
@@ -221,15 +232,13 @@ filter: brightness(50%);
 	padding: 20px;
 	font-size: 18px;
 	text-shadow: 0 1px 2px #000;
-	
 	-webkit-transition: all 0.5s ease;
 	-o-transition: all 0.5s ease;
 	transition: all 0.5 ease;
 }
 
 .content-img ul li:hover .imagen {
-	top: 0%;
-
+	top: 0;
 	-webkit-box-shadow:  0 0 25px 10px rgba(0,0,0,0.5);
 	box-shadow: 0 0 25px 10px rgba(0,0,0,0.5);
 }
@@ -240,7 +249,6 @@ filter: brightness(50%);
 	-ms-transform: scale(1.1);
 	-o-transform: scale(1.1);
 	transform: scale(1.1);
-
 	-webkit-transition: all 0.5s ease;
 	-o-transition: all 0.5s ease;
 	transition: all 0.5 ease;
@@ -257,7 +265,6 @@ filter: brightness(50%);
 
 .back-to-top{
     cursor: pointer;
-    position: fixed;
     bottom: 20px;
     right: 20px;
     display:none;
@@ -268,6 +275,8 @@ filter: brightness(50%);
 	text-align: center;
 	background-color: gray;
 	background-color:transparent;
+	width: 100%;
+	float: left;
 }
 
 .vid-seccion iframe{
@@ -276,6 +285,7 @@ filter: brightness(50%);
 
 footer{
     margin-top: 50px;
+	width: 100%;
     height: 40px;
     padding:5px 0px;
     clear: both;
@@ -287,7 +297,6 @@ footer{
 .list-group{
 	padding-left: 0;
 	margin-bottom: 20px;
-	position: absolute;
 	z-index: 110;
 	height: 65%;
 	top: 38px;
@@ -327,17 +336,15 @@ input,textarea {
 }
 
 #text-area {
-	width: 100%
+	width: 100%;
 	min-height: 100px;
 	max-height: 200px;
-	max-width: 100px;
 }
 
 #boton {
 	background: #4E4C4C;
 	color: #B4B1B1;
 	padding: 20px;
-
 }
 
 #boton:hover {
@@ -346,6 +353,35 @@ input,textarea {
 
 @media (max-width: 480px){
 	#form-contact{
-		width: 100%;
+	width: 100%;
 	}
+}
+#contenedor {
+	width: 100%;
+}
+
+.darthvadersketch1 {
+	float: left;
+	width: 25%;
+}
+
+#galeria {
+	width: 100%;
+	float: left;
+}
+
+#textofoto {
+	width: 100%;
+	height: 100%;
+	background: #fff;
+}
+
+.nav-link {
+	cursor: pointer;
+}
+
+#contacto {
+	width: 100%;
+	padding: 5%;
+	float: left;
 }
